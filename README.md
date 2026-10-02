@@ -24,7 +24,7 @@ MoviEase is a full-stack MERN application designed to simplify online movie tick
 ## Getting Started
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Somen1228/MoviEase.git
+   git clone https://github.com/Archshinde/MovieEase.git
    ```
 
 2. **Install Dependencies**:
