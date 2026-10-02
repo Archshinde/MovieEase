@@ -1,0 +1,75 @@
+.seating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.screen {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.seat-btn {
+  height: 30px;
+  width: 40px;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(33, 0, 180);
+  background-color: #ffffff;
+  border: 2px solid rgb(231, 239, 255);
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.seat-btn:hover {
+  background-color: rgb(48, 120, 255);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.seat-btn.booked {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
+  background: rgb(48, 120, 255, 0.1);
+  cursor: pointer;
+}
+
+.seat-btn.selected {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background: rgb(48, 120, 255);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .seat-btn {
+    height: 25px;
+    width: 35px;
+    font-size: 10px;
+    margin: 3px;
+  }
+
+  .screen {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seat-btn {
+    height: 20px;
+    width: 30px;
+    font-size: 9px;
+    margin: 2px;
+  }
+
+  .screen {
+    font-size: 14px;
+  }
+}
