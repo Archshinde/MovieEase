@@ -1,39 +1,29 @@
-const nodeMailer = require("nodemailer");
+const { Resend } = require("resend");
 
-const sendEmail = (emails, subject, html, text) => {
-    const emailIds = emails.join(", ");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const transporter = nodeMailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS
-        }
-    });
-
-    const mailDetails = {
-        from: process.env.EMAIL_USER,
-        to: emailIds,
-        subject
-    };
-
-    if (html) {
-        mailDetails.html = html;
-    }
-
-    if (text) {
-        mailDetails.text = text;
-    }
-
-    return transporter.sendMail(mailDetails)
-        .then((data) => {
-            console.log(`Email sent successfully to ${emailIds}`);
-            return data;
-        })
-        .catch((err) => {
-            console.error("Unable to send email:", err);
-            throw err;
+const sendEmail = async (emails, subject, html, text) => {
+    try {
+        const { data, error } = await resend.emails.send({
+            from: "MovieEase <onboarding@resend.dev>",
+            to: emails,
+            subject: subject,
+            html: html,
+            text: text
         });
+
+        if (error) {
+            console.error("Unable to send email:", error);
+            throw new Error(error.message);
+        }
+
+        console.log(`Email sent successfully to ${emails.join(", ")}`);
+        return data;
+
+    } catch (err) {
+        console.error("Unable to send email:", err);
+        throw err;
+    }
 };
 
 module.exports = {
