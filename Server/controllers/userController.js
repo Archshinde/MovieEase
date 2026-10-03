@@ -273,7 +273,7 @@ const forgetPassword = async (req, res) => {
     user.otpExpiry = Date.now() + 5 * 60 * 1000;
 
     await user.save();
-    sendEmail(
+    await sendEmail(
       [user.email],
       "OTP for verification",
       `<div> <h1> OTP: ${otp} </h1> </div>`,

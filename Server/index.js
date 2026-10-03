@@ -22,7 +22,7 @@ const apiLimiter = rateLimit({
 })
 
 app.use(cors({
-  origin: "https://movieease-1-3xe2.onrender.com",
+  origin: ["http://localhost:5173", "https://movieease-1-3xe2.onrender.com"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "x-access-token", "Authorization"]
 }));
