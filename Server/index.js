@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
+app.set('trust proxy', 1)
 const cors = require('cors')
 const rateLimit = require("express-rate-limit")
 const mongoSanitize = require('express-mongo-sanitize');
