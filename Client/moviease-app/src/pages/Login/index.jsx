@@ -37,14 +37,17 @@ function Login() {
   };
 
   return (
-    <div>
-      <header className="App-header">
-        <main className="main-area max-w-md mx-auto text-center p-4">
+    // Changed
+    <div className="login-page">
+      <header className="App-header login-header">
+        <main className="main-area max-w-md mx-auto text-center p-4 login-main">
+        {/* Change end */}
           <section>
             <h3 className="text-2xl font-bold mb-6">Login to MoviEase</h3>
           </section>
 
-          <section className="right-section w-[400px]">
+{/* Change done at line 50 */}
+          <section className="login-form-section">
             <Form layout="vertical" onFinish={onFinish} className="space-y-6">
               <Form.Item
                 label="Email"

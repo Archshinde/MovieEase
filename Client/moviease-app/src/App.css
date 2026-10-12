@@ -445,7 +445,179 @@ hr {
   }
 }
 
+
+/* Existing mobile styles */
 @media screen and (max-width: 767px) {
+  .mt-3-mob {
+    margin-top: 1rem;
+  }
+
+  .mt-8px-mob {
+    margin-top: 8px;
+  }
+
+  .ant-layout-header {
+    padding-inline: 10px;
+  }
+
+  .flex-column-mob {
+    flex-direction: column;
+  }
+
+  .single-movie-div {
+    flex-direction: column;
+  }
+
+  .single-movie-img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .scaling-button {
+    transition: transform 0.3s ease;
+  }
+
+  .scaling-button:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* MovieEase login - responsive layout */
+.login-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+}
+
+.login-header.App-header {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.login-main {
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.login-main h3 {
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.login-form-section {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-form {
+  width: 100%;
+  min-width: 0;
+}
+
+.login-form-section .ant-form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-form-item-control,
+.login-form-section .ant-form-item-control-input,
+.login-form-section .ant-form-item-control-input-content {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-input,
+.login-form-section .ant-input-affix-wrapper,
+.login-form-section .ant-btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-input,
+.login-form-section .ant-input-affix-wrapper {
+  min-height: 45px;
+}
+
+.login-form-section .ant-btn {
+  min-height: 48px;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .login-header.App-header {
+    padding: 16px;
+  }
+
+  .login-main {
+    max-width: 440px;
+    padding: 20px 12px;
+  }
+
+  .login-main h3 {
+    font-size: 24px;
+  }
+
+  .login-form-section .ant-form-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Foldables and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-header.App-header {
+    padding: 20px 16px;
+  }
+
+  .login-main {
+    max-width: 440px;
+    padding: 24px 20px;
+  }
+}
+
+/* Tablets and larger screens */
+@media screen and (min-width: 769px) {
+  .login-main {
+    max-width: 560px;
+    padding: 32px;
+  }
+
+  .login-main h3 {
+    font-size: 28px;
+  }
+}
+
+/* Very large screens */
+@media screen and (min-width: 1440px) {
+  .login-main {
+    max-width: 600px;
+  }
+}
+
   .mt-3-mob {
     margin-top: 1rem;
   }
@@ -477,4 +649,264 @@ hr {
   .scaling-button:hover {
     transform: scale(1.1); /* Increase size by 10% on hover */
   }
+
+
+/* Login Page - Mobile and Foldable Responsive */
+
+/* MovieEase Login - Clean Responsive Layout */
+
+
+/* MovieEase Login - Final Width Fix */
+
+/* MovieEase Login - Responsive layout */
+
+.login-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
 }
+
+.login-header.App-header {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-main {
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.login-form-section {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-form,
+.login-form-section .ant-form-item,
+.login-form-section .ant-form-item-control,
+.login-form-section .ant-form-item-control-input,
+.login-form-section .ant-form-item-control-input-content {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-input,
+.login-form-section .ant-input-affix-wrapper,
+.login-form-section .ant-btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .login-header.App-header {
+    padding: 16px;
+  }
+
+  .login-main {
+    max-width: 100%;
+    padding: 20px 12px;
+  }
+
+  .login-main h3 {
+    font-size: 24px;
+  }
+}
+
+/* Foldables and small tablets */
+
+@media screen and (max-width: 767px) {
+  .mt-3-mob {
+    margin-top: 1rem;
+  }
+
+  .mt-8px-mob {
+    margin-top: 8px;
+  }
+
+  .ant-layout-header {
+    padding-inline: 10px;
+  }
+
+  .flex-column-mob {
+    flex-direction: column;
+  }
+
+  .single-movie-div {
+    flex-direction: column;
+  }
+
+  .single-movie-img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .scaling-button {
+    transition: transform 0.3s ease;
+  }
+
+  .scaling-button:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* MovieEase login responsive layout */
+
+/* MovieEase Login - Responsive Layout */
+
+.login-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+}
+
+.login-header.App-header {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.login-main {
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.login-main h3 {
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.login-form-section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-form,
+.login-form-section .ant-form-item,
+.login-form-section .ant-form-item-control,
+.login-form-section .ant-form-item-control-input,
+.login-form-section .ant-form-item-control-input-content {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-input,
+.login-form-section .ant-input-affix-wrapper,
+.login-form-section .ant-btn {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.login-form-section .ant-input,
+.login-form-section .ant-input-affix-wrapper {
+  min-height: 45px;
+}
+
+.login-form-section .ant-btn {
+  min-height: 48px;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .login-header.App-header {
+    padding: 16px;
+  }
+
+  .login-main {
+    max-width: 440px;
+    padding: 20px 12px;
+  }
+
+  .login-main h3 {
+    font-size: 24px;
+  }
+
+  .login-form-section .ant-form-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Foldables and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-header.App-header {
+    padding: 20px 16px;
+  }
+
+  .login-main {
+    max-width: 440px;
+    padding: 24px 20px;
+  }
+}
+
+/* Tablets and larger screens */
+
+/* Tablets and larger screens */
+@media screen and (min-width: 769px) {
+  .login-main {
+    width: 100%;
+    max-width: 600px;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+  .login-form-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-main h3 {
+    font-size: 28px;
+  }
+}
+
+
+/* Very large screens */
+@media screen and (min-width: 1440px) {
+  .login-main {
+    max-width: 600px;
+  }
+}
+
+
+
